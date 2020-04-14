@@ -1,14 +1,14 @@
-
-require 'pry'
+## require 'pry'
 class Artist
     ## add attribute getters and setters
     attr_accessor :name
 
     def initialize(name)
-        ## Initialize a new artist wit its name
+        ## Initialize a new artist with its name
         @name = name
         ## create an empty list for its songs
         @songs = []
+
     end
 
     def add_song(song)
@@ -26,7 +26,6 @@ class Artist
     def add_song_by_name (name)
       song = Song.new(name)
       add_song(song)
-      ## binding.pry
     end
     
     def self.song_count
